@@ -65,8 +65,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chatWindow.classList.remove('open');
     });
 
-    // API Configuration
-    const API_KEY = 'AIzaSyDYa_l9rXgcNkFbHDxMO2Z3pLz6uVENloU'; // Provided by user
+    // API Configuration - Read from environment variable injected by build script
+    const API_KEY = window.ENV?.API_KEY || 'MISSING_API_KEY'; 
     const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
     // System Context (Karan's Resume)
