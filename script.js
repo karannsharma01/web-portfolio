@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // API Configuration - Read from environment variable injected by build script
     const API_KEY = window.ENV?.API_KEY || 'MISSING_API_KEY'; 
-    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
+    const API_URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.5-flash:generateContent?key=${API_KEY}`;
 
     // System Context (Karan's Resume)
     const systemPrompt = `You are the AI assistant for Karan's portfolio website. Your job is to answer questions about Karan's skills, experience, and projects professionally and concisely. 
